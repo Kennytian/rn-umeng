@@ -7,7 +7,7 @@
 //
 
 #import "RCTUmeng.h"
-#import "MobClick.h"
+#import "UMMobClick/MobClick.h"
 
 
 @implementation RCTUmeng
@@ -31,7 +31,9 @@ RCT_EXPORT_METHOD(enableEncrypt:(BOOL)value)
 
 RCT_EXPORT_METHOD(startWithAppkey:(NSString *)appkey)
 {
-    [MobClick startWithAppkey:appkey];
+    UMConfigInstance.appKey = appkey;
+    UMConfigInstance.ChannelId = @"App Store";
+    [MobClick startWithConfigure:UMConfigInstance];
 }
 
 RCT_EXPORT_METHOD(setAppVersion:(NSString*)version)
