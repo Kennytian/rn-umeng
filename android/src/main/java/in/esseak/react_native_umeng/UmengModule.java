@@ -13,8 +13,8 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableMapKeySetIterator;
-import com.umeng.analytics.AnalyticsConfig;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.analytics.MobclickAgent.UMAnalyticsConfig;
 
 import java.util.HashMap;
 
@@ -38,8 +38,7 @@ public class UmengModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void startWithAppkey(String value){
         if (!startedWithAppkey){
-            AnalyticsConfig.setAppkey(context,value);
-            AnalyticsConfig.setChannel("android");
+            MobclickAgent.startWithConfigure(new UMAnalyticsConfig(context, value, "android"));
             startedWithAppkey = true;
         }
     }
@@ -47,8 +46,7 @@ public class UmengModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void startWithAppkeyAndChannel(String value,String channel){
         if (!startedWithAppkey){
-            AnalyticsConfig.setAppkey(context,value);
-            AnalyticsConfig.setChannel(channel);
+            MobclickAgent.startWithConfigure(new UMAnalyticsConfig(context, value, channel));
             startedWithAppkey = true;
         }
     }
