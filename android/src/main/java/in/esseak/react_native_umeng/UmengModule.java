@@ -58,7 +58,7 @@ public class UmengModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void enableEncrypt(Boolean value){
-        AnalyticsConfig.enableEncrypt(value);
+        MobclickAgent.enableEncrypt(value);
     }
 
     @ReactMethod
