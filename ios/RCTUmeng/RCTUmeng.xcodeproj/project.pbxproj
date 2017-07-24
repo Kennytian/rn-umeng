@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CD73591F2601F8002F47CE /* UMMobClick.framework */; };
 		27B75AB41CABBFF8003925AB /* RCTUmeng.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B75AB31CABBFF8003925AB /* RCTUmeng.h */; };
 		27B75AB61CABBFF8003925AB /* RCTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B75AB51CABBFF8003925AB /* RCTUmeng.m */; };
-		27B75ACE1CABC344003925AB /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B75ACB1CABC344003925AB /* libMobClickLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,12 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18CD73591F2601F8002F47CE /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		27B75AB01CABBFF8003925AB /* libRCTUmeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTUmeng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B75AB31CABBFF8003925AB /* RCTUmeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTUmeng.h; sourceTree = "<group>"; };
 		27B75AB51CABBFF8003925AB /* RCTUmeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTUmeng.m; sourceTree = "<group>"; };
-		27B75ACB1CABC344003925AB /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		27B75ACC1CABC344003925AB /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
-		27B75ACD1CABC344003925AB /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B75ACE1CABC344003925AB /* libMobClickLibrary.a in Frameworks */,
+				18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +73,7 @@
 		27B75ACA1CABC344003925AB /* UMAnalytics_Sdk */ = {
 			isa = PBXGroup;
 			children = (
-				27B75ACB1CABC344003925AB /* libMobClickLibrary.a */,
-				27B75ACC1CABC344003925AB /* MobClick.h */,
-				27B75ACD1CABC344003925AB /* MobClickSocialAnalytics.h */,
+				18CD73591F2601F8002F47CE /* UMMobClick.framework */,
 			);
 			path = UMAnalytics_Sdk;
 			sourceTree = "<group>";
@@ -230,6 +226,10 @@
 		27B75ABA1CABBFF8003925AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTUmeng/UMAnalytics_Sdk",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -244,6 +244,10 @@
 		27B75ABB1CABBFF8003925AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTUmeng/UMAnalytics_Sdk",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
