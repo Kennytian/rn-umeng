@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A004DF1F26EF7C00E76ED7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */; };
 		18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CD73591F2601F8002F47CE /* UMMobClick.framework */; };
 		27B75AB41CABBFF8003925AB /* RCTUmeng.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B75AB31CABBFF8003925AB /* RCTUmeng.h */; };
 		27B75AB61CABBFF8003925AB /* RCTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B75AB51CABBFF8003925AB /* RCTUmeng.m */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A004DF1F26EF7C00E76ED7 /* CoreTelephony.framework in Frameworks */,
 				18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
