@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1822AD161F26E4BC0097F4B6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */; };
+		1822AD181F26E4CF0097F4B6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822AD171F26E4CF0097F4B6 /* libz.tbd */; };
+		1822AD1A1F26E4E80097F4B6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822AD191F26E4E80097F4B6 /* libsqlite3.tbd */; };
 		18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CD73591F2601F8002F47CE /* UMMobClick.framework */; };
 		27B75AB41CABBFF8003925AB /* RCTUmeng.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B75AB31CABBFF8003925AB /* RCTUmeng.h */; };
 		27B75AB61CABBFF8003925AB /* RCTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B75AB51CABBFF8003925AB /* RCTUmeng.m */; };
@@ -26,6 +29,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1822AD171F26E4CF0097F4B6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1822AD191F26E4E80097F4B6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		18CD73591F2601F8002F47CE /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		27B75AB01CABBFF8003925AB /* libRCTUmeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTUmeng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B75AB31CABBFF8003925AB /* RCTUmeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTUmeng.h; sourceTree = "<group>"; };
@@ -37,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1822AD1A1F26E4E80097F4B6 /* libsqlite3.tbd in Frameworks */,
+				1822AD181F26E4CF0097F4B6 /* libz.tbd in Frameworks */,
+				1822AD161F26E4BC0097F4B6 /* CoreTelephony.framework in Frameworks */,
 				18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,11 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1822AD141F26E4BB0097F4B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1822AD191F26E4E80097F4B6 /* libsqlite3.tbd */,
+				1822AD171F26E4CF0097F4B6 /* libz.tbd */,
+				1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27B75AA71CABBFF8003925AB = {
 			isa = PBXGroup;
 			children = (
 				27B75AB21CABBFF8003925AB /* RCTUmeng */,
 				27B75AB11CABBFF8003925AB /* Products */,
+				1822AD141F26E4BB0097F4B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
