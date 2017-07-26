@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18A004DF1F26EF7C00E76ED7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */; };
-		18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CD73591F2601F8002F47CE /* UMMobClick.framework */; };
+		18E5E6261F287214008DADBB /* libUMMobClick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E5E6241F2871E7008DADBB /* libUMMobClick.a */; };
 		27B75AB41CABBFF8003925AB /* RCTUmeng.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B75AB31CABBFF8003925AB /* RCTUmeng.h */; };
 		27B75AB61CABBFF8003925AB /* RCTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B75AB51CABBFF8003925AB /* RCTUmeng.m */; };
 /* End PBXBuildFile section */
@@ -30,7 +29,10 @@
 		1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1822AD171F26E4CF0097F4B6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1822AD191F26E4E80097F4B6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		18CD73591F2601F8002F47CE /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		18E5E6211F2871E7008DADBB /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
+		18E5E6221F2871E7008DADBB /* MobClickGameAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickGameAnalytics.h; sourceTree = "<group>"; };
+		18E5E6231F2871E7008DADBB /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		18E5E6241F2871E7008DADBB /* libUMMobClick.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMMobClick.a; sourceTree = "<group>"; };
 		27B75AB01CABBFF8003925AB /* libRCTUmeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTUmeng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B75AB31CABBFF8003925AB /* RCTUmeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTUmeng.h; sourceTree = "<group>"; };
 		27B75AB51CABBFF8003925AB /* RCTUmeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTUmeng.m; sourceTree = "<group>"; };
@@ -41,8 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A004DF1F26EF7C00E76ED7 /* CoreTelephony.framework in Frameworks */,
-				18CD735A1F2601F8002F47CE /* UMMobClick.framework in Frameworks */,
+				18E5E6261F287214008DADBB /* libUMMobClick.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +90,10 @@
 		27B75ACA1CABC344003925AB /* UMAnalytics_Sdk */ = {
 			isa = PBXGroup;
 			children = (
-				18CD73591F2601F8002F47CE /* UMMobClick.framework */,
+				18E5E6211F2871E7008DADBB /* MobClickSocialAnalytics.h */,
+				18E5E6221F2871E7008DADBB /* MobClickGameAnalytics.h */,
+				18E5E6231F2871E7008DADBB /* MobClick.h */,
+				18E5E6241F2871E7008DADBB /* libUMMobClick.a */,
 			);
 			path = UMAnalytics_Sdk;
 			sourceTree = "<group>";
