@@ -20,7 +20,7 @@ $ npm install --save rn-umeng2
 Module Source:
 
 ```bash
-$PROJECT_DIR/node_modules/rn-umeng/android
+$PROJECT_DIR/node_modules/rn-umeng2/android
 ```
 
 ![image](https://raw.githubusercontent.com/Kennytian/rn-umeng/master/screenshots/screenshot0.png)
@@ -78,7 +78,7 @@ getDeviceInfo((infoStr)=>{})      | getDeviceInfo           | getDeviceInfo
 In your project code
 
 ```javascript
-import MobclickAgent from 'rn-umeng';
+import MobclickAgent from 'rn-umeng2';
 MobclickAgent.startWithAppkey('your appkey');
 MobclickAgent.setDebugMode(true);
 MobclickAgent.onEvent("testEvent");
