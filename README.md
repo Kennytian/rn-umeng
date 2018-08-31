@@ -5,14 +5,14 @@ A Umeng lib for React Native
 # iOS Install
 
 ```bash
-$ npm install --save rn-umeng
-$ rnpm link rn-umeng
+$ npm install --save rn-umeng2
+$ react-native link rn-umeng2
 ```
 
 # Android Install (Manual)
 
 ```bash
-$ npm install --save rn-umeng
+$ npm install --save rn-umeng2
 ```
 
 #### Add Gradle Module Manually
@@ -23,9 +23,9 @@ Module Source:
 $PROJECT_DIR/node_modules/rn-umeng/android
 ```
 
-![image](https://raw.githubusercontent.com/esseak/rn-umeng/master/screenshots/screenshot0.png)
+![image](https://raw.githubusercontent.com/Kennytian/rn-umeng/master/screenshots/screenshot0.png)
 
-![image](https://raw.githubusercontent.com/esseak/rn-umeng/master/screenshots/screenshot1.png)
+![image](https://raw.githubusercontent.com/Kennytian/rn-umeng/master/screenshots/screenshot1.png)
 
 #### Add UmengPackage
 
@@ -85,6 +85,9 @@ MobclickAgent.onEvent("testEvent");
 ```
 
 # Changelog
+
+### - 1.0.8
+ - 修改 npm 包名 
 
 ### - 1.0.7
  - Android / iOS 升级至 umeng-analytics-v6.1.0
