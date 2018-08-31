@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E5E6261F287214008DADBB /* libUMMobClick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E5E6241F2871E7008DADBB /* libUMMobClick.a */; };
 		27B75AB41CABBFF8003925AB /* RCTUmeng.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B75AB31CABBFF8003925AB /* RCTUmeng.h */; };
 		27B75AB61CABBFF8003925AB /* RCTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B75AB51CABBFF8003925AB /* RCTUmeng.m */; };
-		27B75ACE1CABC344003925AB /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B75ACB1CABC344003925AB /* libMobClickLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,12 +26,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1822AD171F26E4CF0097F4B6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1822AD191F26E4E80097F4B6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		18E5E6211F2871E7008DADBB /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
+		18E5E6221F2871E7008DADBB /* MobClickGameAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickGameAnalytics.h; sourceTree = "<group>"; };
+		18E5E6231F2871E7008DADBB /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		18E5E6241F2871E7008DADBB /* libUMMobClick.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMMobClick.a; sourceTree = "<group>"; };
 		27B75AB01CABBFF8003925AB /* libRCTUmeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTUmeng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B75AB31CABBFF8003925AB /* RCTUmeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTUmeng.h; sourceTree = "<group>"; };
 		27B75AB51CABBFF8003925AB /* RCTUmeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTUmeng.m; sourceTree = "<group>"; };
-		27B75ACB1CABC344003925AB /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		27B75ACC1CABC344003925AB /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
-		27B75ACD1CABC344003925AB /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B75ACE1CABC344003925AB /* libMobClickLibrary.a in Frameworks */,
+				18E5E6261F287214008DADBB /* libUMMobClick.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1822AD141F26E4BB0097F4B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1822AD191F26E4E80097F4B6 /* libsqlite3.tbd */,
+				1822AD171F26E4CF0097F4B6 /* libz.tbd */,
+				1822AD151F26E4BC0097F4B6 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27B75AA71CABBFF8003925AB = {
 			isa = PBXGroup;
 			children = (
 				27B75AB21CABBFF8003925AB /* RCTUmeng */,
 				27B75AB11CABBFF8003925AB /* Products */,
+				1822AD141F26E4BB0097F4B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +90,10 @@
 		27B75ACA1CABC344003925AB /* UMAnalytics_Sdk */ = {
 			isa = PBXGroup;
 			children = (
-				27B75ACB1CABC344003925AB /* libMobClickLibrary.a */,
-				27B75ACC1CABC344003925AB /* MobClick.h */,
-				27B75ACD1CABC344003925AB /* MobClickSocialAnalytics.h */,
+				18E5E6211F2871E7008DADBB /* MobClickSocialAnalytics.h */,
+				18E5E6221F2871E7008DADBB /* MobClickGameAnalytics.h */,
+				18E5E6231F2871E7008DADBB /* MobClick.h */,
+				18E5E6241F2871E7008DADBB /* libUMMobClick.a */,
 			);
 			path = UMAnalytics_Sdk;
 			sourceTree = "<group>";
@@ -230,6 +246,10 @@
 		27B75ABA1CABBFF8003925AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTUmeng/UMAnalytics_Sdk",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -244,6 +264,10 @@
 		27B75ABB1CABBFF8003925AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTUmeng/UMAnalytics_Sdk",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

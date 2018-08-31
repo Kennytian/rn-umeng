@@ -1,6 +1,5 @@
 package in.esseak.react_native_umeng;
 
-import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.ReactPackage;
@@ -19,10 +18,6 @@ public class UmengPackage implements ReactPackage {
         return Arrays.asList(new NativeModule[]{
                 new UmengModule(reactContext),
         });
-    }
-
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override

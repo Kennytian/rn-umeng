@@ -7,7 +7,7 @@
 //
 
 #import "RCTUmeng.h"
-#import "UMMobClick/MobClick.h"
+#import "MobClick.h"
 
 
 @implementation RCTUmeng
