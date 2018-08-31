@@ -86,6 +86,17 @@ MobclickAgent.onEvent("testEvent");
 
 # Changelog
 
+### - 1.0.10
+ - 升级 Android 端编译版本
+   - compileSdkVersion 26
+   - buildToolsVersion "26.0.3"
+ - 新增 .editorconfig 文件
+ - 新增 .gitignore 项
+ - 删除 Android 端无用的 manifest 内容
+ - 删除 Android 端下 res/values 目录
+ - 删除 iOS 端 project.xcworksapce
+ - 删除 iOS 端 xcuserdata
+ 
 ### - 1.0.9
  - 同步 @zbtang 分支代码
  - 感谢 @zbtang

@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
 
     defaultConfig {
         minSdkVersion 16
@@ -20,6 +20,15 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile files('libs/umeng-analytics-v6.1.0.jar')
     compile 'com.facebook.react:react-native:+'
+
+    compile files('libs/umeng-analytics-v6.1.0.jar')
+
+    // maven latest
+    // compile 'com.umeng.sdk:common:latest.integration'
+    // compile 'com.umeng.sdk:analytics:latest.integration'
+
+    // maven minSdk
+    // compile 'com.umeng.sdk:common:1.4.1'
+    // compile 'com.umeng.sdk:analytics:7.4.1'
 }
