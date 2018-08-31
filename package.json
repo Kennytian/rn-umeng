@@ -1,6 +1,6 @@
 {
-  "name": "rn-umeng",
-  "version": "1.0.6",
+  "name": "rn-umeng2",
+  "version": "1.0.7",
   "description": "RN-Umeng",
   "main": "main.js",
   "scripts": {
@@ -10,6 +10,6 @@
     "react native",
     "umeng"
   ],
-  "author": "mike",
+  "author": "mike,ljspace,Kennytian",
   "license": "MIT"
 }

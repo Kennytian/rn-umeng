@@ -84,9 +84,11 @@ MobclickAgent.setDebugMode(true);
 MobclickAgent.onEvent("testEvent");
 ```
 
-
 # Changelog
 
+### - 1.0.7
+ - Android / iOS 升级至 umeng-analytics-v6.1.0
+ - 感谢 @ljspace
 
 ### - 1.0.6
  - support RN 0.40
