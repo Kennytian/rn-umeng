@@ -1,4 +1,18 @@
-node_modules
+# Xcode
 .DS_*
+DerivedData
+
+# Android
 *.log
 .idea/
+*.iml
+.gradle
+local.properties
+
+# eslint
+.eslintcache
+
+# packages
+node_modules
+npm-debug.log
+yarn-error.log

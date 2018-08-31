@@ -1,7 +1,7 @@
 {
   "name": "rn-umeng2",
   "version": "1.0.8",
-  "description": "RN-Umeng",
+  "description": "A Umeng lib for React Native",
   "main": "main.js",
   "scripts": {
     "test": "test"
@@ -10,6 +10,6 @@
     "react native",
     "umeng"
   ],
-  "author": "mike,ljspace,Kennytian",
+  "author": "mike,ljspace,zbtang,Kennytian",
   "license": "MIT"
 }

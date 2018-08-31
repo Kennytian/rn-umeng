@@ -86,6 +86,10 @@ MobclickAgent.onEvent("testEvent");
 
 # Changelog
 
+### - 1.0.9
+ - 同步 @zbtang 分支代码
+ - 感谢 @zbtang
+
 ### - 1.0.8
  - 修改 npm 包名 
 
